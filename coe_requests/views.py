@@ -38,7 +38,7 @@ class PlatformConfiguration(detail.BaseDetailView):
 
         return http.JsonResponse({
             # Return the list of allowed offerings for this platform
-            'offerings': list(platform.offerings.values_list('pk', flat=True))
+            'offerings': list(platform.offerings.values_list('pk', 'name'))
         })
 
 

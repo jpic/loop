@@ -15,7 +15,7 @@ urlpatterns = [
         name='platform_configuration',
     ),
     url(
-        r'platform/(?P<platform_pk>\d+)/offering/(?P<offering_pk>\d+)/configuration/$',
+        r'platform/(?P<platform_pk>\w+)/offering/(?P<offering_pk>\w+)/configuration/$',
         views.PlatformOfferingConfiguration.as_view(),
         name='platformoffering_configuration',
     ),
